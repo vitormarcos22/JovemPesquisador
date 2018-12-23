@@ -2,11 +2,8 @@ package jovempesquisador2
 
 class Projeto {
 
-    static hasMany = [usuarios : Usuario]
-    static belongsTo = [usuario : Usuario]
-    static hasMany = [professores : Professor]
-    static belongsTo = [professor : Professor]
-    static belongsTo = [disciplinas : Disciplina]
+    static hasMany = [usuarios : Usuario, professores : Professor]
+    static belongsTo = [usuario : Usuario, professor : Professor, disciplinas : Disciplina]
 
     String titulo
     String escola
