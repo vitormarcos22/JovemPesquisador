@@ -91,11 +91,12 @@ hibernate:
         queries: false
         use_second_level_cache: false
         use_query_cache: false
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
 dataSource:
     pooled: true
     jmxExport: true
-    driverClassName: org.h2.Driver
-    username: sa
+    driverClassName: com.mysql.jdbc.Driver
+    username: root
     password: ''
 
 environments:
