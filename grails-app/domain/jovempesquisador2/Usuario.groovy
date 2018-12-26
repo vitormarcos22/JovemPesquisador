@@ -2,8 +2,7 @@ package jovempesquisador2
 
 class Usuario {
 
-    static hasMany = [projetos : Projeto]
-    static hasMany = [foruns : Forum]
+    static hasMany = [projetos : Projeto, foruns : Forum]
 
     String nome
     String sexo
@@ -11,6 +10,7 @@ class Usuario {
     Date dataNascimento
     String escola
     String email
+    String senha
     String telefone
 
     static constraints = {
@@ -20,6 +20,7 @@ class Usuario {
         dataNascimento(nullable:false, blank:false)
         escola(nullable:false, blank:false, maxSize:128)
         email(email:true, nullable:false, blank:false, unique:true)
+        senha(nullable:false, blank:false, maxSize:15, minSize:8)
         telefone(nullable:false, blank:false, maxSize:14)
     }
 }

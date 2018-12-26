@@ -9,6 +9,7 @@ buildscript {
         classpath "gradle.plugin.com.energizedwork:idea-gradle-plugins:1.4"
         classpath "org.grails.plugins:hibernate5:${gormVersion-".RELEASE"}"
         classpath "com.bertramlabs.plugins:asset-pipeline-gradle:2.14.6"
+
     }
 }
 
@@ -30,6 +31,7 @@ repositories {
 }
 
 dependencies {
+    runtime "mysql:mysql-connector-java:5.1.36"
     compile "org.springframework.boot:spring-boot-starter-logging"
     compile "org.springframework.boot:spring-boot-autoconfigure"
     compile "org.grails:grails-core"

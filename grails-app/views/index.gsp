@@ -5,49 +5,81 @@
     <title>Welcome to Grails</title>
 </head>
 <body>
-    <content tag="nav">
-        <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Application Status <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-                <li><a href="#">Environment: ${grails.util.Environment.current.name}</a></li>
-                <li><a href="#">App profile: ${grailsApplication.config.grails?.profile}</a></li>
-                <li><a href="#">App version:
-                    <g:meta name="info.app.version"/></a>
-                </li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Grails version:
-                    <g:meta name="info.app.grailsVersion"/></a>
-                </li>
-                <li><a href="#">Groovy version: ${GroovySystem.getVersion()}</a></li>
-                <li><a href="#">JVM version: ${System.getProperty('java.version')}</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Reloading active: ${grails.util.Environment.reloadingAgentEnabled}</a></li>
-            </ul>
-        </li>
-        <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Artefacts <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-                <li><a href="#">Controllers: ${grailsApplication.controllerClasses.size()}</a></li>
-                <li><a href="#">Domains: ${grailsApplication.domainClasses.size()}</a></li>
-                <li><a href="#">Services: ${grailsApplication.serviceClasses.size()}</a></li>
-                <li><a href="#">Tag Libraries: ${grailsApplication.tagLibClasses.size()}</a></li>
-            </ul>
-        </li>
-        <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Installed Plugins <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-                <g:each var="plugin" in="${applicationContext.getBean('pluginManager').allPlugins}">
-                    <li><a href="#">${plugin.name} - ${plugin.version}</a></li>
-                </g:each>
-            </ul>
-        </li>
-    </content>
-
-    <div class="svg" role="presentation">
-        <div class="grails-logo-container">
-            <asset:image src="grails-cupsonly-logo-white.svg" class="grails-logo"/>
+    <!-- Header -->
+    <header class="masthead d-flex">
+        <div class="container text-center my-auto">
+            <h1 class="mb-1">Stylish Portfolio</h1>
+            <h3 class="mb-5">
+                <em>A Free Bootstrap Theme by Start Bootstrap</em>
+            </h3>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
         </div>
-    </div>
+        <div class="overlay"></div>
+    </header>
+
+    <!-- About -->
+    <section class="content-section bg-light" id="about">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
+                    <p class="lead mb-5">This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at
+                        <a href="https://unsplash.com/">Unsplash</a>!</p>
+                    <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="content-section bg-primary text-white text-center" id="services">
+        <div class="container">
+            <div class="content-section-heading">
+                <h3 class="text-secondary mb-0">Services</h3>
+                <h2 class="mb-5">What We Offer</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                    <span class="service-icon rounded-circle mx-auto mb-3">
+                        <i class="icon-screen-smartphone"></i>
+                    </span>
+                    <h4>
+                        <strong>Responsive</strong>
+                    </h4>
+                    <p class="text-faded mb-0">Looks great on any screen size!</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                    <span class="service-icon rounded-circle mx-auto mb-3">
+                        <i class="icon-pencil"></i>
+                    </span>
+                    <h4>
+                        <strong>Redesigned</strong>
+                    </h4>
+                    <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                    <span class="service-icon rounded-circle mx-auto mb-3">
+                        <i class="icon-like"></i>
+                    </span>
+                    <h4>
+                        <strong>Favorited</strong>
+                    </h4>
+                    <p class="text-faded mb-0">Millions of users
+                        <i class="fas fa-heart"></i>
+                        Start Bootstrap!</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <span class="service-icon rounded-circle mx-auto mb-3">
+                        <i class="icon-mustache"></i>
+                    </span>
+                    <h4>
+                        <strong>Question</strong>
+                    </h4>
+                    <p class="text-faded mb-0">I mustache you a question...</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <div id="content" role="main">
         <section class="row colset-2-its">

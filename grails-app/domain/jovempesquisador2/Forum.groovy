@@ -3,7 +3,7 @@ package jovempesquisador2
 class Forum {
 
     static hasMany = [usuarios : Usuario]
-    static belongsTo = [usuario : Usuario]
+    static belongsTo = Usuario
 
     String topico
     Date dataPergunta
