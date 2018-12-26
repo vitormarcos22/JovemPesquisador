@@ -11,7 +11,7 @@ class ProjetoController {
 
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
-        respond projetoService.list(params), model:[projetoCount: projetoService.count()]
+        respond projetoService.list(params), model:[projetos: projetoService.list()]
     }
 
     def show(Long id) {

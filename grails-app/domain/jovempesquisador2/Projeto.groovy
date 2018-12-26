@@ -2,12 +2,11 @@ package jovempesquisador2
 
 class Projeto {
 
-    static hasMany = [usuarios : Usuario, professores : Professor]
-    static belongsTo = [usuario : Usuario, professor : Professor, disciplinas : Disciplina]
+    static hasMany = [usuarios : Usuario, professores : Professor, disciplina : Disciplina]
+    static belongsTo = [Usuario, Professor, Disciplina]
 
     String titulo
     String escola
-    String enderecoEscola
     Date data
     String tematica
     String resumo
@@ -20,7 +19,6 @@ class Projeto {
     static constraints = {
         titulo(nullable:false, blank:false, maxSize:254, unique:true)
         escola(nullable:false, blank:false, maxSize:128)
-        enderecoEscola(nullable:false, blank:false, maxSize:254)
         data(nullable:false, blank:false)
         tematica(nullable:false, blank:false, maxSize:64)
         resumo(nullable:false, blank:false, maxSize:800)

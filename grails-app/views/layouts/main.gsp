@@ -9,42 +9,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <asset:link rel="icon" href="favicon.ico" type="image/x-ico" />
 
-    <asset:stylesheet src="application.css"/>
+    <!-- Bootstrap Core CSS -->
+    <asset:stylesheet src="bootstrap.min.css" />
+
+    <!-- Custom Fonts -->
+    <asset:stylesheet src="fontawesome-free/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <asset:stylesheet src="simple-line-icons/css/simple-line-icons.css"/>
+
+    <!-- Custom CSS -->
+    <asset:stylesheet src="stylish-portfolio.min.css"/>
+
+    <!-- Custom CSS -->
+        <asset:stylesheet src="modelo-pag.css"/>
 
     <g:layoutHead/>
 </head>
 <body>
 
-    <div class="navbar navbar-default navbar-static-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/#">
-		    <asset:image src="grails.svg" alt="Grails Logo"/>
-                </a>
-            </div>
-            <div class="navbar-collapse collapse" aria-expanded="false" style="height: 0.8px;">
-                <ul class="nav navbar-nav navbar-right">
-                    <g:pageProperty name="page.nav" />
-                </ul>
-            </div>
-        </div>
-    </div>
+    <!-- Navigation -->
+    <a class="menu-toggle rounded" href="#">
+        <i class="fas fa-bars"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a class="js-scroll-trigger" href="/">Mural</a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a class="js-scroll-trigger" href="/usuario>Perfil</a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a class="js-scroll-trigger" href="/projeto">Projetos</a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a class="js-scroll-trigger" href="/disciplina">Disciplinas</a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a class="js-scroll-trigger" href="/forum">Fórum</a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a class="js-scroll-trigger" href="/usuario">Sair</a>
+            </li>
+        </ul>
+    </nav>
 
     <g:layoutBody/>
 
-    <div class="footer" role="contentinfo"></div>
+    <!-- Bootstrap core JavaScript -->
+    <asset:javascript src="jquery.min.js"/>
+    <asset:javascript src="bootstrap.bundle.min.js"/>
 
-    <div id="spinner" class="spinner" style="display:none;">
-        <g:message code="spinner.alt" default="Loading&hellip;"/>
-    </div>
+    <!-- Plugin JavaScript -->
+    <asset:javascript src="jquery.easing.min.js"/>
 
-    <asset:javascript src="application.js"/>
+    <!-- Custom scripts for this template -->
+    <asset:javascript src="stylish-portfolio.min.js"/>
 
 </body>
 </html>

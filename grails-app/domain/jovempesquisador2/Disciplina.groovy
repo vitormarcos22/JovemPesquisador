@@ -3,7 +3,6 @@ package jovempesquisador2
 class Disciplina {
 
     static hasMany = [professores : Professor, projetos : Projeto]
-    static  belongsTo = [projeto : Projeto]
 
     String nome
     int cargaHoraria
