@@ -2,17 +2,17 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
-    <title>Welcome to Grails</title>
+    <title>Mural</title>
 </head>
 <body>
     <!-- Header -->
     <header class="masthead d-flex">
         <div class="container text-center my-auto">
-            <h1 class="mb-1">Stylish Portfolio</h1>
+            <h1 class="mb-1">Jovem Pesquisador</h1>
             <h3 class="mb-5">
-                <em>A Free Bootstrap Theme by Start Bootstrap</em>
+                <em>Questione, busque, responda & resolva!</em>
             </h3>
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Notificações</a>
         </div>
         <div class="overlay"></div>
     </header>
@@ -25,7 +25,7 @@
                     <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
                     <p class="lead mb-5">This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at
                         <a href="https://unsplash.com/">Unsplash</a>!</p>
-                    <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a>
+                    <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">Mais</a>
                 </div>
             </div>
         </div>

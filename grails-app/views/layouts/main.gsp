@@ -37,7 +37,7 @@
                 <a class="js-scroll-trigger" href="/">Mural</a>
             </li>
             <li class="sidebar-nav-item">
-                <a class="js-scroll-trigger" href="/usuario>Perfil</a>
+                <a class="js-scroll-trigger" href="/disciplina">Perfil</a>
             </li>
             <li class="sidebar-nav-item">
                 <a class="js-scroll-trigger" href="/projeto">Projetos</a>
