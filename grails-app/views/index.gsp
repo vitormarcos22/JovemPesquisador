@@ -35,47 +35,43 @@
     <section class="content-section bg-primary text-white text-center" id="services">
         <div class="container">
             <div class="content-section-heading">
-                <h3 class="text-secondary mb-0">Services</h3>
-                <h2 class="mb-5">What We Offer</h2>
+                <h3 class="text-secondary mb-0">Assistir agora</h3>
+                <h2 class="mb-5">Tutoriais</h2>
             </div>
             <div class="row">
                 <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                    <span class="service-icon rounded-circle mx-auto mb-3">
-                        <i class="icon-screen-smartphone"></i>
-                    </span>
+                    <iframe class="video" width="200" height="150" src="https://www.youtube.com/embed/3kagdzn0lME" picture-in-picture" allowfullscreen>
+                    </iframe>
                     <h4>
-                        <strong>Responsive</strong>
+                        <strong>Método Científico</strong>
                     </h4>
-                    <p class="text-faded mb-0">Looks great on any screen size!</p>
+                    <p class="text-faded mb-0">Entenda o método cientifico.</p>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                    <span class="service-icon rounded-circle mx-auto mb-3">
-                        <i class="icon-pencil"></i>
-                    </span>
+                    <iframe class="video" width="200" height="150" src="https://www.youtube.com/embed/CKBIgNxtRhk" picture-in-picture" allowfullscreen>
+                    </iframe>
                     <h4>
-                        <strong>Redesigned</strong>
+                        <strong>Pergunta</strong>
                     </h4>
-                    <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p>
+                    <p class="text-faded mb-0">Veja como elaborar uma boa pergunta.</p>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-                    <span class="service-icon rounded-circle mx-auto mb-3">
-                        <i class="icon-like"></i>
-                    </span>
+                    <iframe class="video" width="200" height="150" src="https://www.youtube.com/embed/lKbBWhwuaL4" picture-in-picture" allowfullscreen>
+                    </iframe>
                     <h4>
-                        <strong>Favorited</strong>
+                        <strong>Hipóteses</strong>
                     </h4>
-                    <p class="text-faded mb-0">Millions of users
+                    <p class="text-faded mb-0">Entenda como elaborar as possíveis respostas para sua pergunta
                         <i class="fas fa-heart"></i>
-                        Start Bootstrap!</p>
+                    </p>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <span class="service-icon rounded-circle mx-auto mb-3">
-                        <i class="icon-mustache"></i>
-                    </span>
+                    <iframe class="video" width="200" height="150" src="https://www.youtube.com/embed/g-WtxOqIxFc" picture-in-picture" allowfullscreen>
+                    </iframe>
                     <h4>
-                        <strong>Question</strong>
+                        <strong>Experimento</strong>
                     </h4>
-                    <p class="text-faded mb-0">I mustache you a question...</p>
+                    <p class="text-faded mb-0">Saiba como testar sua hipótese.</p>
                 </div>
             </div>
         </div>

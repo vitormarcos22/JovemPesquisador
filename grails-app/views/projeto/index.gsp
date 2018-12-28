@@ -6,7 +6,6 @@
     </head>
     <body>
     <div class="homepage">
-        <div class="col-6">
 
             <table class="table table-dark">
                 <thead>
@@ -22,24 +21,30 @@
                     <th scope="row">1</th>
                     <td>Mark</td>
                     <td>Otto</td>
-                    <td>@mdo</td>
+
                 </tr>
                 <tr>
                     <th scope="row">2</th>
                     <td>Jacob</td>
                     <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
                 </tr>
                 </tbody>
             </table>
+
+        <div class="col-4">
+            <button type="submit" class="btn btn-primary"><a href="/projeto/create"> Novo Projeto </a></button>
         </div>
-        <div class="col-6">
+
+        <div class="col-4">
+            <button type="submit" class="btn btn-primary"><a href="/projeto/edit">Editar Projeto </a></button>
+        </div>
+
+        <div class="col-4">
+            <button type="submit" class="btn btn-primary"><a href="/projeto/show">Remover Projeto</a></button>
+        </div>
+
+        </div>
+
 
         </div>
     </div>

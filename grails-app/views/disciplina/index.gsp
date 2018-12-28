@@ -6,42 +6,36 @@
 </head>
 <body>
 <div class="homepage">
-    <div class="col-6">
+    <form>
+        <div class="form-group">
+            <label for="formGroupExampleInput">Nome da Disciplina:</label>
+            <input type="text" class="form-control" id="formGroupExampleInput">
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput2">Carga Horária:</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ex: 45h">
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput2">Série:</label>
+            <br>
+            <select>
+                <option>6ª</option>
+                <option>7ª</option>
+                <option>8ª</option>
+                <option>9ª</option>
+                <option>1º E.M.</option>
+                <option>2º E.M.</option>
+                <option>3º E.M.</option>
+                <option>4º E.M.</option>
+            </select>
+            <br>
 
-        <table class="table table-dark">
-            <thead>
-            <tr>
-                <th  scope="col">#</th>
-                <th scope="col">Disciplina</th>
-                <th scope="col">Professor</th>
+        </div>
 
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="col-6">
-
-    </div>
+        <div class="col-auto my-1">
+            <button type="submit" class="btn btn-primary">Cadastrar Disciplina</button>
+        </div>
+    </form>
 </div>
 </body>
 </html>
