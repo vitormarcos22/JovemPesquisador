@@ -2,10 +2,24 @@
 <html>
 <head>
     <meta name="layout" content="main" />
+    <g:set var="entityName" value="${message(code: 'forum.label', default: 'Forum')}" />
     <title>Forum</title>
 </head>
 <body>
 <div class="homepage">
+    <div id="list-forum" class="content scaffold-list" role="main">
+        <h1><g:message code="default.list.label" args="[entityName]" /></h1>
+        <g:if test="${flash.message}">
+            <div class="message" role="status">${flash.message}</div>
+        </g:if>
+        <f:table collection="${forumList}"/>
+    </div>
+    <br>
+
+    <div class="col-auto my-1">
+        <a class="btn btn-primary" href="/forum/create"">Cadastrar forúm</a>
+    </div>
+    <br>
     <form class="was-validated">
         <div class="mb-3">
             <label for="validationTextarea">Escreva aqui a sua pergunta:</label>
@@ -31,7 +45,7 @@
                 <div class="col-auto my-1">
                     <div class="custom-control custom-checkbox mr-sm-2">
                         <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
-                        <label class="custom-control-label" for="customControlAutosizing">Concordo que minha pergunta está no padrão do respeito e da educação</label>
+                        <label class="custom-control-label" class="concordo" for="customControlAutosizing">Concordo que minha pergunta está no padrão do respeito e da educação</label>
                     </div>
                 </div>
                 <div class="col-auto my-1">

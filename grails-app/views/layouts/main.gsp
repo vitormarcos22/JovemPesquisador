@@ -49,7 +49,7 @@
                 <a class="js-scroll-trigger" href="/forum">Fórum</a>
             </li>
             <li class="sidebar-nav-item">
-                <a class="js-scroll-trigger" href="/usuario">Sair</a>
+                <a class="js-scroll-trigger" href="/sair/index">Sair</a>
             </li>
         </ul>
     </nav>

@@ -6,6 +6,14 @@
 </head>
 <body>
 <div class="homepage">
+    <div id="list-disciplina" class="content scaffold-list" role="main">
+        <h1><g:message code="default.list.label" args="[entityName]" /></h1>
+        <g:if test="${flash.message}">
+            <div class="message" role="status">${flash.message}</div>
+        </g:if>
+        <f:table collection="${disciplinaList}"/>
+    </div>
+    <br>
     <form>
         <div class="form-group">
             <label for="formGroupExampleInput">Nome da Disciplina:</label>
@@ -33,9 +41,10 @@
         </div>
 
         <div class="col-auto my-1">
-            <button type="submit" class="btn btn-primary">Cadastrar Disciplina</button>
+            <a class="btn btn-primary" href="/disciplina/create"">Cadastrar Disciplina</a>
         </div>
     </form>
+
 </div>
 </body>
 </html>

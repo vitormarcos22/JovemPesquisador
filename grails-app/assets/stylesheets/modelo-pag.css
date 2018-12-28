@@ -5,7 +5,6 @@
   width: 80vw;
   margin-top: 2%;
   margin-left: 6%;
-  background-color: #1c7430;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   border-top-left-radius: 12px;
@@ -18,11 +17,15 @@
 }
 
 .cfundo {
-  background-color: #00CED1
+    background-color: #00CED1;
 }
-input {
-  background-color: #AFEEEE
+.input {
+  background-color: #AFEEEE;
 }
 .concordo {
-  bgcolor: #FFFFFF
+  background-color: #FFFFFF;
+}
+
+.saida{
+    background-color: #1b1e21;
 }

@@ -2,46 +2,28 @@
 <html>
     <head>
         <meta name="layout" content="main" />
+        <g:set var="entityName" value="${message(code: 'projeto.label', default: 'Projeto')}" />
         <title>Meus Projetos</title>
     </head>
-    <body>
+    <body class="cfundo">
     <div class="homepage">
 
-            <table class="table table-dark">
-                <thead>
-                <tr>
-                    <th  scope="col">#</th>
-                    <th scope="col">PROJETOS</th>
-                    <th scope="col">DATA</th>
 
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
+        <div id="list-projeto" class="content scaffold-list" role="main">
+            <h1><g:message code="default.list.label" args="[entityName]" /></h1>
+            <g:if test="${flash.message}">
+                <div class="message" role="status">${flash.message}</div>
+            </g:if>
+            <f:table collection="${projetoList}"/>
+        <div>
 
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                </tr>
-                </tbody>
-            </table>
+            <br>
 
-        <div class="col-4">
-            <button type="submit" class="btn btn-primary"><a href="/projeto/create"> Novo Projeto </a></button>
+
+        <div>
+            <a class="btn btn-primary" href="/projeto/create"> Novo Projeto </a>
         </div>
 
-        <div class="col-4">
-            <button type="submit" class="btn btn-primary"><a href="/projeto/edit">Editar Projeto </a></button>
-        </div>
-
-        <div class="col-4">
-            <button type="submit" class="btn btn-primary"><a href="/projeto/show">Remover Projeto</a></button>
-        </div>
 
         </div>
 
